@@ -1,0 +1,28 @@
+.activity-list {
+  display: flex;
+}
+
+.section--no-top-padding {
+  padding-top: 0;
+}
+
+.activity-list__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.activity-section__over-text {
+  @include font(bold, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
