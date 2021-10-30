@@ -65,8 +65,10 @@
     @include font(bold, 18px, 2, 0.06em);
     text-align: Left;
   }
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -103,6 +105,8 @@
   padding-left: 24px;
   padding-right: 24px;
   border: 1px solid #eeeeee;
+
+  flex-grow: 1;
 }
 
 .project-top-text {

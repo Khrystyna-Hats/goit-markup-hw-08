@@ -77,16 +77,6 @@
   border-bottom: 1px solid #eeeeee;
 }
 
-section {
-  padding: 94px 0;
-}
-
-footer {
-  background-color: var(--second-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .nav__link--current {
   color: var(--accent-color);
   &::after {

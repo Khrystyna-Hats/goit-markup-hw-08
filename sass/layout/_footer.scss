@@ -7,7 +7,11 @@
 
 .main-address__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 9px;
+    }
   }
 }
 
@@ -28,23 +32,56 @@
 }
 
 .footer-form {
-  @include flex();
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    @include flex();
+  }
 }
 
 .footer-address {
-  margin-right: 70px;
-  flex-grow: 1;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    flex-grow: 1;
+    text-align: left;
+  }
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-social {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer-social__title {
+  margin: 0 auto;
+
   @include font(bold, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--third-text-color);
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .icons-item__link {
@@ -61,8 +98,12 @@
 }
 
 .footer-subscription {
-  margin-right: 0;
-  margin-left: 93px;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+    text-align: left;
+  }
 }
 
 .subscribe-form {
@@ -80,10 +121,11 @@
   background-color: var(--accent-color);
   color: var(--third-text-color);
   @include flex();
+  margin: 0 auto;
 }
 
 .footer-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -92,14 +134,39 @@
   padding-right: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-right: 12px;
   color: var(--third-text-color);
   &::placeholder {
     @include font(normal, 16px, 1.25, 0.03em);
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .footer-btn__icon {
   margin-left: 10px;
+}
+
+.footer-wrapper {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 60px;
+    margin-right: 75px;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
