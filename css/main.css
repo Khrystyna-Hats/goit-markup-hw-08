@@ -604,8 +604,8 @@ footer {
 
 .mob-menu-content {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .hero-section__title {

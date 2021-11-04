@@ -172,6 +172,7 @@
 
 .menu-nav__list {
   margin-top: 48px;
+  // margin-bottom: 302px;
 }
 
 .menu-nav__link--current {
@@ -224,6 +225,6 @@
 
 .mob-menu-content {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
+  justify-content: space-between;
 }
