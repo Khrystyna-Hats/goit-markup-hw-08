@@ -1,10 +1,12 @@
 .portfolio {
   display: flex;
-  justify-content: flex-start;
+  // justify-content: flex-start;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     flex-wrap: wrap;
+    margin-bottom: 40px;
   }
+
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-bottom: 30px;
@@ -32,16 +34,12 @@
 }
 
 .portfolio__item {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     margin-bottom: 15px;
   }
 
   &:not(:last-child) {
     margin-right: 8px;
-  }
-
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 40px;
   }
 }
 
@@ -62,7 +60,6 @@
 }
 
 .projects__card {
-  height: 100%;
   margin: 30px;
 }
 
